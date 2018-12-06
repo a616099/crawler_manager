@@ -1,6 +1,7 @@
 from flask import render_template, redirect
 from .. import db
-from .froms import ConfigForm
+from . import main
+from .forms import ConfigForm
 from ..models import Config
 
 @main.route('/config', methods=['GET', 'POST'])
