@@ -12,7 +12,7 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-    'mysql+pymysql://nprice:ways369@192.168.1.56:3306/npriceDB?charset=utf8'
+    'mysql+pymysql://root:123456@192.168.4.107:3306/crawl_manage?charset=utf8'
 
 
 config = {

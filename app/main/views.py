@@ -17,4 +17,8 @@ def config():
         db.session.add(config)
         db.seesion.commit()
         return redirect(url_for())
-    return render_template('', form=form)
+    return render_template('config.html', form=form)
+
+@main.route('/')
+def index():
+    return 'Hello'
